@@ -163,7 +163,7 @@ background: rgba(255,255,255,0.95);
 <nav class="flex flex-col space-y-4">
 <a href="#home" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-home">Home</a>
 <a href="#services" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-services">Services</a>
-<!--<a href="#booking" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-booking">Booking</a>-->
+<a href="#booking" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-booking">Booking</a>
 <a href="#gallery" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-gallery">Gallery</a>
 <a href="#about" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-about">About Us</a>
 <a href="#contact" class="text-gray-700 hover:text-primary font-medium" data-translate="nav-contact">Contact</a>
@@ -193,55 +193,60 @@ background: rgba(255,255,255,0.95);
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 <!-- Tara Flow 30 ini-->	
+	
 <div class="service-card bg-white rounded-xl p-8 shadow-lg">
-<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-<i class="ri-hand-heart-line text-primary text-2xl"></i>
-</div>
-<h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service1-title">Tara Flow Massage - Natural Oil Massage</h3>
-<p class="text-gray-600 mb-6" data-translate="service1-desc">Gentle flowing massage with natural oils for complete relaxation and muscle relief</p>
-<div class="flex justify-between items-center mb-6">
-<span class="text-sm text-gray-500" data-translate="duration30">30 minutes</span>
-<span class="text-2xl font-bold text-primary">€25</span>
-</div>
-<button id="calendly-button-tf3" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
+  <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+    <i class="ri-hand-heart-line text-primary text-2xl"></i>
+  </div>
+  <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service1-title">Tara Flow Massage - Natural Oil Massage</h3>
+  <p class="text-gray-600 mb-6" data-translate="service1-desc">Gentle flowing massage with natural oils for complete relaxation and muscle relief</p>
+  <div class="flex justify-between items-center mb-6">
+    <span class="text-sm text-gray-500" data-translate="duration">30 minutes</span>
+    <span class="text-2xl font-bold text-primary">€25</span>
+  </div>
+  <button id="koalendar-button-tf3-2" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
-</button>
+  </button>
 
-
-<script>
-document.getElementById('calendly-button-tf3').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/tara-flow-massage-30min?hide_event_type_details=1&hide_gdpr_banner=1'
+  <script>
+    document.getElementById('koalendar-button-tf3-2').addEventListener('click', function() {
+      Koalendar('open', {
+        url: 'https://koalendar.com/e/lom-thai-massage',
+        type: 'inline'
+      });
+      return false;
     });
-    return false;
-});
-</script>
-</div>
+  </script>
+</div>	
 <!-- Tara Flow 30 end-->
+
+
+
 <!-- Tara Flow 60 ini -->	
 <div class="service-card bg-white rounded-xl p-8 shadow-lg">
 <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+
 <i class="ri-hand-heart-line text-primary text-2xl"></i>
 </div>
 <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service1-title">Tara Flow Massage - Natural Oil Massage</h3>
 <p class="text-gray-600 mb-6" data-translate="service1-desc">Gentle flowing massage with natural oils for complete relaxation and muscle relief</p>
 <div class="flex justify-between items-center mb-6">
-<span class="text-sm text-gray-500" data-translate="duration60">60 minutes</span>
+<span class="text-sm text-gray-500" data-translate="duration">60 minutes</span>
 <span class="text-2xl font-bold text-primary">€45</span>
 </div>
-<button id="calendly-button-tf6" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
+<button id="koalendar-button-tf6" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
-</button>
+  </button>
 
-
-<script>
-document.getElementById('calendly-button-tf6').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/tara-flow-massage-60min?hide_event_type_details=1&hide_gdpr_banner=1'
+  <script>
+    document.getElementById('koalendar-button-tf6').addEventListener('click', function() {
+      Koalendar('open', {
+        url: 'https://koalendar.com/e/tara-flow-massage-natural-oil-60-min',
+        type: 'inline'
+      });
+      return false;
     });
-    return false;
-});
-</script>
+  </script>
 </div>
 <!-- Tara Flow 60 end-->
 <!-- Tara Flow 90 ini -->	
@@ -252,22 +257,22 @@ document.getElementById('calendly-button-tf6').addEventListener('click', functio
 <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service1-title">Tara Flow Massage - Natural Oil Massage</h3>
 <p class="text-gray-600 mb-6" data-translate="service1-desc">Gentle flowing massage with natural oils for complete relaxation and muscle relief</p>
 <div class="flex justify-between items-center mb-6">
-<span class="text-sm text-gray-500" data-translate="duration90">90 minutes</span>
+<span class="text-sm text-gray-500" data-translate="duration">90 minutes</span>
 <span class="text-2xl font-bold text-primary">€60</span>
 </div>
-<button id="calendly-button-tf9" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
+<button id="koalendar-button-tf9" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
-</button>
+  </button>
 
-
-<script>
-document.getElementById('calendly-button-tf9').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/tara-flow-massage-90min?hide_event_type_details=1&hide_gdpr_banner=1'
+  <script>
+    document.getElementById('koalendar-button-tf9').addEventListener('click', function() {
+      Koalendar('open', {
+        url: 'https://koalendar.com/e/tara-flow-massage-natural-oil-90-min',
+        type: 'inline'
+      });
+      return false;
     });
-    return false;
-});
-</script>
+  </script>
 </div>
 <!-- Tara Flow 90 end-->	
 <!-- Lom Balance 30 ini-->	
@@ -278,22 +283,22 @@ document.getElementById('calendly-button-tf9').addEventListener('click', functio
 <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service2-title">Lom Balance Therapy - Aroma Oil</h3>
 <p class="text-gray-600 mb-6" data-translate="service2-desc">Balancing aromatherapy treatment with premium essential oils for emotional and physical harmony</p>
 <div class="flex justify-between items-center mb-6">
-<span class="text-sm text-gray-500" data-translate="duration30">30minutes</span>
+<span class="text-sm text-gray-500" data-translate="duration">30minutes</span>
 <span class="text-2xl font-bold text-primary">€30</span>
 </div>
-<button id="calendly-button-lb" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
+<button id="koalendar-button-lb" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
-</button>
+  </button>
 
-
-<script>
-document.getElementById('calendly-button-lb').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/lom-balance-therapy-30min?hide_event_type_details=1&hide_gdpr_banner=1'
+  <script>
+    document.getElementById('koalendar-button-lb').addEventListener('click', function() {
+      Koalendar('open', {
+        url: 'https://koalendar.com/e/lom-balance-therapy-aroma-oil',
+        type: 'inline'
+      });
+      return false;
     });
-    return false;
-});
-</script>
+  </script>
 </div>
 <!-- Lom Balance 30 end-->
 <!-- Hot Stone 30 ini-->	
@@ -304,24 +309,25 @@ document.getElementById('calendly-button-lb').addEventListener('click', function
 <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service3-title">Hot Stone Therapy</h3>
 <p class="text-gray-600 mb-6" data-translate="service3-desc">Heated volcanic stones placed on key points to release tension and promote deep muscle relaxation.</p>
 <div class="flex justify-between items-center mb-6">
-<span class="text-sm text-gray-500" data-translate="duration60">60 minutes</span>
+<span class="text-sm text-gray-500" data-translate="duration">60 minutes</span>
 <span class="text-2xl font-bold text-primary">€65</span>
 </div>
 
-	
-<button id="calendly-button-hs" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
-    Book Now
-</button>
 
-<script>
-document.getElementById('calendly-button-hs').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/hot-stone-therapy-60min?hide_event_type_details=1&hide_gdpr_banner=1'
+<button id="koalendar-button-hs" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
+    Book Now
+  </button>
+
+  <script>
+    document.getElementById('koalendar-button-hs').addEventListener('click', function() {
+      Koalendar('open', {
+        url: 'https://koalendar.com/e/hot-stone-therapy',
+        type: 'inline'
+      });
+      return false;
     });
-    return false;
-});
-</script>
-	
+  </script>
+
 </div>
 <!-- Hot Stone 30 end-->
 <!-- Thai Healing 30 ini-->	
@@ -332,23 +338,23 @@ document.getElementById('calendly-button-hs').addEventListener('click', function
 <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service4-title">Thai Healing Massage</h3>
 <p class="text-gray-600 mb-6" data-translate="service4-desc">Traditional Thai massage techniques combining acupressure, stretching, and energy work for complete wellness.</p>
 <div class="flex justify-between items-center mb-6">
-<span class="text-sm text-gray-500" data-translate="duration60">60 minutes</span>
+<span class="text-sm text-gray-500" data-translate="duration">60 minutes</span>
 <span class="text-2xl font-bold text-primary">€45</span>
 </div>
 
-<button id="calendly-button-th" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
+<button id="koalendar-button-th" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
-</button>
+  </button>
 
-
-<script>
-document.getElementById('calendly-button-th').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/thai-healing-massage-60min?hide_event_type_details=1&hide_gdpr_banner=1'
+  <script>
+    document.getElementById('koalendar-button-th').addEventListener('click', function() {
+      Koalendar('open', {
+        url: 'https://koalendar.com/e/thai-healing-massage',
+        type: 'inline'
+      });
+      return false;
     });
-    return false;
-});
-</script>		
+  </script>
 
 </div>
 <!-- Thai Healing 30 end-->
@@ -440,7 +446,7 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 <div class="container mx-auto px-6">
 <div class="text-center mb-16">
 <h2 class="text-4xl font-serif font-bold text-gray-800 mb-4" data-translate="gallery-title">Experience Gallery</h2>
-<p class="text-lg text-gray-600 max-w-2xl mx-auto" data-translate="gallery-subtitle">Take a glimpse into our serene massage sessions and the peaceful environments we create in a home.</p>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto" data-translate="gallery-subtitle">Take a glimpse into our serene massage sessions and the peaceful environments we create in your home.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
@@ -475,8 +481,8 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 <div class="grid lg:grid-cols-2 gap-16 items-center">
 <div>
 <h2 class="text-4xl font-serif font-bold text-gray-800 mb-6" data-translate="about-title">Our Story & Heritage</h2>
-<p class="text-lg text-gray-600 mb-6" data-translate="about-text1">Lom Tara was founded with a deep respect for the ancient healing traditions of Thailand. Our journey began when our founder, Wanna Pangsri, trained under master healers in the temples of Northern Thailand, learning the sacred art of Nuad Thai - traditional Thai massage.</p>
-<p class="text-lg text-gray-600 mb-6" data-translate="about-text2">With over 15 years of experience, we bring authentic Thai healing techniques directly in home, creating a sanctuary of peace and wellness. Our mission is to share the profound benefits of traditional Thai massage with busy individuals who deserve moments of tranquility in their daily lives.</p>
+<p class="text-lg text-gray-600 mb-6" data-translate="about-text1">Lom Tara was founded with a deep respect for the ancient healing traditions of Thailand. Our journey began when our founder, Siriporn Nakamura, trained under master healers in the temples of Northern Thailand, learning the sacred art of Nuad Thai - traditional Thai massage.</p>
+<p class="text-lg text-gray-600 mb-6" data-translate="about-text2">With over 15 years of experience, we bring authentic Thai healing techniques directly to your home, creating a sanctuary of peace and wellness wherever you are. Our mission is to share the profound benefits of traditional Thai massage with busy individuals who deserve moments of tranquility in their daily lives.</p>
 <p class="text-lg text-gray-600 mb-8" data-translate="about-text3">Every session is more than just a massage - it's a journey back to balance, combining ancient wisdom with modern convenience to restore your body, mind, and spirit.</p>
 <div class="grid grid-cols-2 gap-6">
 <div class="text-center">
@@ -500,8 +506,9 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 </div>
 </div>
 </div>
+	
 <div class="mt-20">
-	<!--
+<!--	
 <h3 class="text-3xl font-serif font-bold text-center text-gray-800 mb-12" data-translate="meet-team">Meet Our Healing Team</h3>
 <div class="grid md:grid-cols-3 gap-8">
 <div class="text-center">
@@ -540,12 +547,11 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 </div>
 </div>
 </div>
-</section>
-	-->
+</section>-->
 <section class="py-20 bg-primary">
 <div class="container mx-auto px-6 text-center">
 <h2 class="text-4xl font-serif font-bold text-white mb-6" data-translate="cta-title">Ready to Experience True Relaxation?</h2>
-<p class="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto" data-translate="cta-subtitle">Book your personalized Thai massage session today and discover the healing power of ancient wellness traditions in the comfort of a home.</p>
+<p class="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto" data-translate="cta-subtitle">Book your personalized Thai massage session today and discover the healing power of ancient wellness traditions in the comfort of your own home.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
 <a href="#services" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-button font-semibold text-lg transition-colors whitespace-nowrap" data-translate="book-session">Book Your Session</a>
 <!--
@@ -566,7 +572,7 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 <p class="text-sm font-serif text-secondary" data-translate="tagline">Healed by Grace, Held by Tara</p>
 </div>
 </div>
-<p class="text-gray-300 mb-6" data-translate="footer-desc">Bringing the ancient healing art of Thai massage. Experience authentic wellness treatments in the comfort of a home.</p>
+<p class="text-gray-300 mb-6" data-translate="footer-desc">Bringing the ancient healing art of Thai massage to your doorstep. Experience authentic wellness treatments in the comfort of your home.</p>
 <div class="flex space-x-4">
 <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
 <i class="ri-facebook-fill"></i>
@@ -584,7 +590,7 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 <ul class="space-y-3">
 <li><a href="#home" class="text-gray-300 hover:text-primary transition-colors" data-translate="nav-home">Home</a></li>
 <li><a href="#services" class="text-gray-300 hover:text-primary transition-colors" data-translate="nav-services">Services</a></li>
-<!--<li><a href="#booking" class="text-gray-300 hover:text-primary transition-colors" data-translate="nav-booking">Booking</a></li>-->
+<li><a href="#booking" class="text-gray-300 hover:text-primary transition-colors" data-translate="nav-booking">Booking</a></li>
 <li><a href="#gallery" class="text-gray-300 hover:text-primary transition-colors" data-translate="nav-gallery">Gallery</a></li>
 <li><a href="#about" class="text-gray-300 hover:text-primary transition-colors" data-translate="nav-about">About Us</a></li>
 </ul>
@@ -614,20 +620,20 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 <div class="w-5 h-5 flex items-center justify-center mt-1">
 <i class="ri-mail-line text-primary"></i>
 </div>
-<p class="text-gray-300">info@lomtara.nl</p>
+<p class="text-gray-300">info@siamserenity.nl</p>
 </div>
 <div class="flex items-start space-x-3">
 <div class="w-5 h-5 flex items-center justify-center mt-1">
 <i class="ri-map-pin-line text-primary"></i>
 </div>
-<p class="text-gray-300" data-translate="service-area">Den Haag ZH</p>
+<p class="text-gray-300" data-translate="service-area">Amsterdam & Surrounding Areas</p>
 </div>
 <div class="flex items-start space-x-3">
 <div class="w-5 h-5 flex items-center justify-center mt-1">
 <i class="ri-time-line text-primary"></i>
 </div>
 <div>
-<p class="text-gray-300" data-translate="business-hours">Wed-Sat: 10:00 - 20:00</p>
+<p class="text-gray-300" data-translate="business-hours">Mon-Sun: 9:00 - 21:00</p>
 <p class="text-sm text-gray-400" data-translate="by-appointment">By Appointment Only</p>
 </div>
 </div>
@@ -636,8 +642,8 @@ document.getElementById('calendly-button-th').addEventListener('click', function
 </div>
 <div class="border-t border-gray-800 pt-8">
 <div class="flex flex-col md:flex-row justify-between items-center">
-<p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="copyright">© 2025 Lom Tara Wellness. All rights reserved. Made by AAC</p>
-
+<p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="copyright">© 2025 Lom Tara Wellness. All rights reserved.</p>
+<p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="copyright">Made by AAC</p>
 <div class="flex space-x-6">
 <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors" data-translate="privacy-policy">Privacy Policy</a>
 <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors" data-translate="terms-service">Terms of Service</a>
@@ -831,13 +837,13 @@ en: {
 'hero-learn': 'Learn More',
 'services-title': 'Our Signature Treatments',
 'services-subtitle': 'Each treatment is carefully crafted to restore balance, relieve tension, and rejuvenate your body and mind using traditional Thai healing methods.',
-'service1-title': 'Tara Flow Massage',
+'service1-title': 'Traditional Thai Massage',
 'service1-desc': 'Ancient healing technique combining acupressure, stretching, and energy work to restore balance and flexibility.',
-'service2-title': 'Lom Balance Therapy',
+'service2-title': 'Aromatherapy Oil Massage',
 'service2-desc': 'Relaxing massage with premium essential oils to soothe muscles and calm the mind for deep relaxation.',
 'service3-title': 'Hot Stone Therapy',
 'service3-desc': 'Heated volcanic stones placed on key points to release tension and promote deep muscle relaxation.',
-'service4-title': 'Thai Healing Massage',
+'service4-title': 'Thai Foot Reflexology',
 'service4-desc': 'Therapeutic pressure point massage focusing on feet to stimulate healing throughout the entire body.',
 'service5-title': 'Prenatal Massage',
 'service5-desc': 'Gentle, safe massage techniques specially designed for expectant mothers to relieve pregnancy discomfort.',
@@ -881,10 +887,10 @@ en: {
 'total': 'Total',
 'confirm-booking': 'Confirm Booking',
 'gallery-title': 'Experience Gallery',
-'gallery-subtitle': 'Take a glimpse into our serene massage sessions and the peaceful environments we create in a home.',
+'gallery-subtitle': 'Take a glimpse into our serene massage sessions and the peaceful environments we create in your home.',
 'about-title': 'Our Story & Heritage',
-'about-text1': 'Lom Tara was founded with a deep respect for the ancient healing traditions of Thailand. Our journey began when our founder, Wanna Pangsri, trained under master healers in the temples of Northern Thailand, learning the sacred art of Nuad Thai - traditional Thai massage.',
-'about-text2': 'With over 15 years of experience, we bring authentic Thai healing techniques directly in home, creating a sanctuary of peace and wellness. Our mission is to share the profound benefits of traditional Thai massage with busy individuals who deserve moments of tranquility in their daily lives.',
+'about-text1': 'Lom Tara was founded with a deep respect for the ancient healing traditions of Thailand. Our journey began when our founder, Siriporn Nakamura, trained under master healers in the temples of Northern Thailand, learning the sacred art of Nuad Thai - traditional Thai massage.',
+'about-text2': 'With over 15 years of experience, we bring authentic Thai healing techniques directly to your home, creating a sanctuary of peace and wellness wherever you are. Our mission is to share the profound benefits of traditional Thai massage with busy individuals who deserve moments of tranquility in their daily lives.',
 'about-text3': 'Every session is more than just a massage - it\'s a journey back to balance, combining ancient wisdom with modern convenience to restore your body, mind, and spirit.',
 'happy-clients': 'Happy Clients',
 'years-experience': 'Years Experience',
@@ -898,18 +904,18 @@ en: {
 'certified': 'Certified',
 'thai-master': 'Thai Master',
 'cta-title': 'Ready to Experience True Relaxation?',
-'cta-subtitle': 'Book your personalized Thai massage session today and discover the healing power of ancient wellness traditions in the comfort of a home.',
+'cta-subtitle': 'Book your personalized Thai massage session today and discover the healing power of ancient wellness traditions in the comfort of your own home.',
 'book-session': 'Book Your Session',
 'call-us': 'Call Us Now',
-'footer-desc': 'Bringing the ancient healing art of Thai massage. Experience authentic wellness treatments in the comfort of a home.',
+'footer-desc': 'Bringing the ancient healing art of Thai massage to your doorstep. Experience authentic wellness treatments in the comfort of your home.',
 'quick-links': 'Quick Links',
 'services': 'Services',
 'contact-info': 'Contact Info',
 'available-hours': 'Available 9:00 - 21:00',
-'service-area': 'Den Haag ZH',
-'business-hours': 'Wed-Sat: 10:00 - 20:00',
+'service-area': 'Amsterdam & Surrounding Areas',
+'business-hours': 'Mon-Sun: 9:00 - 21:00',
 'by-appointment': 'By Appointment Only',
-'copyright': '© 2025 Lom Tara. All rights reserved. Made by AAC',
+'copyright': '© 2025 Lom Tara. All rights reserved.',
 'privacy-policy': 'Privacy Policy',
 'terms-service': 'Terms of Service'
 },
@@ -927,21 +933,19 @@ nl: {
 'hero-learn': 'Meer Leren',
 'services-title': 'Onze Kenmerkende Behandelingen',
 'services-subtitle': 'Elke behandeling is zorgvuldig samengesteld om balans te herstellen, spanning te verlichten en uw lichaam en geest te verjongen met traditionele Thaise genezingsmethoden.',
-'service1-title': 'Tara Flow Massage',
+'service1-title': 'Traditionele Thaise Massage',
 'service1-desc': 'Oude genezingstechniek die acupressuur, stretching en energiewerk combineert om balans en flexibiliteit te herstellen.',
-'service2-title': 'Lom Balans Therapie',
+'service2-title': 'Aromatherapie Oliemassage',
 'service2-desc': 'Ontspannende massage met premium essentiële oliën om spieren te kalmeren en de geest tot diepe ontspanning te brengen.',
 'service3-title': 'Hete Steen Therapie',
 'service3-desc': 'Verwarmde vulkanische stenen geplaatst op belangrijke punten om spanning los te laten en diepe spierontspanning te bevorderen.',
-'service4-title': 'Thaise Helende Massage',
+'service4-title': 'Thaise Voetreflexologie',
 'service4-desc': 'Therapeutische drukpuntmassage gericht op voeten om genezing door het hele lichaam te stimuleren.',
 'service5-title': 'Prenatale Massage',
 'service5-desc': 'Zachte, veilige massagetechnieken speciaal ontworpen voor aanstaande moeders om zwangerschapsongemak te verlichten.',
 'service6-title': 'Koppels Massage',
 'service6-desc': 'Deel een ontspannende ervaring samen met zij-aan-zij massagebehandelingen in het comfort van uw huis.',
-'duration30': '30 minuten',
-'duration60': '60 minuten',
-'duration90': '90 minuten',	
+'duration': '90 minuten',
 'book-now': 'Nu Boeken',
 'packages-title': 'Behandelingspakketten',
 'package1-title': 'Wellness Pakket',
@@ -979,10 +983,10 @@ nl: {
 'total': 'Totaal',
 'confirm-booking': 'Bevestig Boeking',
 'gallery-title': 'Ervaring Galerij',
-'gallery-subtitle': 'Neem een kijkje in onze serene massagesessies en de rustige omgevingen die wij in een thuis creëren.',
+'gallery-subtitle': 'Neem een kijkje in onze serene massagesessies en de vredige omgevingen die we in uw huis creëren.',
 'about-title': 'Ons Verhaal & Erfgoed',
-'about-text1': 'Lom Tara werd opgericht met een diep respect voor de oude genezingstraditie van Thailand. Onze reis begon toen onze oprichter, Wanna Pangsri, trainde onder meestergenezers in de tempels van Noord-Thailand, waar ze de heilige kunst van Nuad Thai - traditionele Thaise massage - leerde.',
-'about-text2': 'Met meer dan 15 jaar ervaring brengen we authentieke Thaise genezingstechnieken direct bij een thuis, waarbij we een heiligdom van vrede en welzijn creëren waar u ook bent. Onze missie is om de diepgaande voordelen van traditionele Thaise massage te delen met drukke individuen die momenten van rust.',
+'about-text1': 'Lom Tara werd opgericht met een diep respect voor de oude genezingstraditie van Thailand. Onze reis begon toen onze oprichter, Siriporn Nakamura, trainde onder meestergenezers in de tempels van Noord-Thailand, waar ze de heilige kunst van Nuad Thai - traditionele Thaise massage - leerde.',
+'about-text2': 'Met meer dan 15 jaar ervaring brengen we authentieke Thaise genezingstechnieken direct bij u thuis, waarbij we een heiligdom van vrede en welzijn creëren waar u ook bent. Onze missie is om de diepgaande voordelen van traditionele Thaise massage te delen met drukke individuen die momenten van rust in hun dagelijks leven verdienen.',
 'about-text3': 'Elke sessie is meer dan alleen een massage - het is een reis terug naar balans, waarbij oude wijsheid wordt gecombineerd met modern gemak om uw lichaam, geest en ziel te herstellen.',
 'happy-clients': 'Tevreden Klanten',
 'years-experience': 'Jaar Ervaring',
@@ -996,18 +1000,18 @@ nl: {
 'certified': 'Gecertificeerd',
 'thai-master': 'Thaise Meester',
 'cta-title': 'Klaar om Echte Ontspanning te Ervaren?',
-'cta-subtitle': 'Boek vandaag nog uw gepersonaliseerde Thaise massagesessie en ontdek de genezende kracht van oude wellnesstraditie in het comfort van uw een huis.',
+'cta-subtitle': 'Boek vandaag nog uw gepersonaliseerde Thaise massagesessie en ontdek de genezende kracht van oude wellnesstraditie in het comfort van een huis.',
 'book-session': 'Boek Uw Sessie',
 'call-us': 'Bel Ons Nu',
-'footer-desc': 'Wij brengen de eeuwenoude helende kunst van de Thaise massage. Ervaar authentieke wellnessbehandelingen in het comfort van een huis.',
+'footer-desc': 'We brengen de oude genezingskunst van Thaise massage naar uw deur. Ervaar authentieke wellnessbehandelingen in het comfort van uw huis.',
 'quick-links': 'Snelle Links',
 'services': 'Diensten',
 'contact-info': 'Contact Info',
 'available-hours': 'Beschikbaar 9:00 - 21:00',
-'service-area': 'Den Haag ZH',
-'business-hours': 'Wo–zat: 10:00 - 20:00',
+'service-area': 'Amsterdam & Omgeving',
+'business-hours': 'Ma-Zo: 9:00 - 21:00',
 'by-appointment': 'Alleen op Afspraak',
-'copyright': '© 2025 Lom Tara. Alle rechten voorbehouden. Gemaakt door AAC',
+'copyright': '© 2025 Lom Tara. Alle rechten voorbehouden.',
 'privacy-policy': 'Privacybeleid',
 'terms-service': 'Servicevoorwaarden'
 },
@@ -1025,21 +1029,19 @@ th: {
 'hero-learn': 'เรียนรู้เพิ่มเติม',
 'services-title': 'การรักษาพิเศษของเรา',
 'services-subtitle': 'การรักษาแต่ละครั้งได้รับการออกแบบอย่างพิถีพิถันเพื่อคืนสมดุล บรรเทาความตึงเครียด และฟื้นฟูร่างกายและจิตใจของคุณโดยใช้วิธีการรักษาแผนไทยแบบดั้งเดิม',
-'service1-title': 'นวดธาราโฟลว์',
+'service1-title': 'นวดแผนไทยแบบดั้งเดิม',
 'service1-desc': 'เทคนิคการรักษาโบราณที่ผสมผสานการกดจุด การยืด และการทำงานด้านพลังงานเพื่อคืนสมดุลและความยืดหยุ่น',
-'service2-title': 'การบำบัดสมดุลลม',
+'service2-title': 'นวดอโรมาเธอราปี',
 'service2-desc': 'การนวดผ่อนคลายด้วยน้ำมันหอมระเหยชั้นเยี่ยมเพื่อปลอบประโลมกล้ามเนื้อและสงบจิตใจเพื่อการผ่อนคลายอย่างลึกซึ้ง',
 'service3-title': 'บำบัดด้วยหินร้อน',
 'service3-desc': 'หินภูเขาไฟที่ได้รับความร้อนวางไว้ที่จุดสำคัญเพื่อปลดปล่อยความตึงเครียดและส่งเสริมการผ่อนคลายของกล้ามเนื้ออย่างลึกซึ้ง',
-'service4-title': 'นวดแผนไทยเพื่อการบำบัด',
+'service4-title': 'รีเฟล็กโซโลยีเท้าแบบไทย',
 'service4-desc': 'การนวดจุดกดทางบำบัดที่เน้นที่เท้าเพื่อกระตุ้นการรักษาทั่วทั้งร่างกาย',
 'service5-title': 'นวดสำหรับหญิงตั้งครรภ์',
 'service5-desc': 'เทคนิคการนวดที่อ่อนโยนและปลอดภัยที่ออกแบบมาเป็นพิเศษสำหรับคุณแม่ตั้งครรภ์เพื่อบรรเทาความไม่สบายจากการตั้งครรภ์',
 'service6-title': 'นวดคู่รัก',
 'service6-desc': 'แบ่งปันประสบการณ์ที่ผ่อนคลายร่วมกันด้วยการรักษาด้วยการนวดเคียงข้างกันในความสะดวกสบายของบ้านคุณ',
-'duration30': '30 นาที',
-'duration60': '60 นาที',
-'duration90': '90 นาที',	
+'duration': '90 นาที',
 'book-now': 'จองเลย',
 'packages-title': 'แพ็คเกจการรักษา',
 'package1-title': 'แพ็คเกจสุขภาพ',
@@ -1077,7 +1079,7 @@ th: {
 'total': 'รวม',
 'confirm-booking': 'ยืนยันการจอง',
 'gallery-title': 'แกลเลอรี่ประสบการณ์',
-'gallery-subtitle': 'สัมผัสประสบการณ์การนวดอันสงบสุข และบรรยากาศผ่อนคลายที่เราสร้างขึ้นภายในบ้านของคุณ',
+'gallery-subtitle': 'มาดูเซสชันนวดที่เงียบสงบของเราและสภาพแวดล้อมที่เงียบสงบที่เราสร้างในบ้านของคุณ',
 'about-title': 'เรื่องราวและมรดกของเรา',
 'about-text1': 'สยามเซเรนิตี้ก่อตั้งขึ้นด้วยความเคารพอย่างลึกซึ้งต่อประเพณีการรักษาโบราณของไทย การเดินทางของเราเริ่มต้นเมื่อผู้ก่อตั้งของเรา สิริพร นากามูระ ได้รับการฝึกฝนภายใต้นักรักษาผู้เชี่ยวชาญในวัดทางภาคเหนือของไทย เรียนรู้ศิลปะศักดิ์สิทธิ์ของนวดไทย - การนวดแผนไทยแบบดั้งเดิม',
 'about-text2': 'ด้วยประสบการณ์กว่า 15 ปี เรานำเทคนิคการรักษาแผนไทยแท้มาให้คุณที่บ้านโดยตรง สร้างสถานที่ศักดิ์สิทธิ์แห่งความสงบและความเป็นอยู่ที่ดีไม่ว่าคุณจะอยู่ที่ไหน พันธกิจของเราคือการแบ่งปันประโยชน์อันลึกซึ้งของการนวดแผนไทยแบบดั้งเดิมกับบุคคลที่ยุ่งซึ่งสมควรได้รับช่วงเวลาแห่งความเงียบสงบในชีวิตประจำวันของพวกเขา',
@@ -1097,15 +1099,15 @@ th: {
 'cta-subtitle': 'จองเซสชันนวดแผนไทยส่วนบุคคลของคุณวันนี้และค้นพบพลังการรักษาของประเพณีสุขภาพโบราณในความสะดวกสบายของบ้านคุณเอง',
 'book-session': 'จองเซสชันของคุณ',
 'call-us': 'โทรหาเราตอนนี้',
-'footer-desc': 'นำศิลปะการบำบัดโบราณของการนวดแผนไทยมาสู่คุณ สัมผัสการดูแลสุขภาพที่แท้จริงได้ในความสะดวกสบายของบ้าน',
+'footer-desc': 'นำศิลปะการรักษาโบราณของการนวดไทยมาถึงหน้าประตูของคุณ สัมผัสการรักษาสุขภาพแท้ในความสะดวกสบายของบ้านคุณ',
 'quick-links': 'ลิงก์ด่วน',
 'services': 'บริการ',
 'contact-info': 'ข้อมูลติดต่อ',
 'available-hours': 'ใช้ได้ 9:00 - 21:00',
-'service-area': 'เฮก',
-'business-hours': 'พุธ-เสาร์: 10:00 - 20:00 น.',
+'service-area': 'อัมสเตอร์ดัมและพื้นที่โดยรอบ',
+'business-hours': 'จันทร์-อาทิตย์: 9:00 - 21:00',
 'by-appointment': 'ตามนัดหมายเท่านั้น',
-'copyright': '© 2025 สยามเซเรนิตี้ สงวนลิขสิทธิ์ทั้งหมด ผลิตโดย AAC',
+'copyright': '© 2025 สยามเซเรนิตี้ สงวนลิขสิทธิ์ทั้งหมด',
 'privacy-policy': 'นโยบายความเป็นส่วนตัว',
 'terms-service': 'เงื่อนไขการบริการ'
 }
@@ -1136,73 +1138,22 @@ translatePage(lang);
 });
 });
 </script>
+
+<!-- Koalendar Widget Script -->
+<script>
+  window.Koalendar = window.Koalendar || function() {
+    (Koalendar.props = Koalendar.props || []).push(arguments);
+  };
+</script>
+<script async src="https://koalendar.com/assets/widget.js"></script>
+<script>
+  Koalendar('init');
+</script>
 	
-<!-- Scripts de Calendly -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	
 
-<!-- Tara flow 30 min -->	
-<script>
-document.getElementById('calendly-button-tf3').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/tara-flow-massage-30min?hide_event_type_details=1&hide_gdpr_banner=1'
-    });
-    return false;
-});
-</script>
-<!-- Tara flow 60 min -->	
-<script>
-document.getElementById('calendly-button-tf6').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/tara-flow-massage-60min?hide_event_type_details=1&hide_gdpr_banner=1'
-    });
-    return false;
-});
-</script>
-<!-- Tara flow 90 min -->	
-<script>
-document.getElementById('calendly-button-tf9').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/tara-flow-massage-90min?hide_event_type_details=1&hide_gdpr_banner=1'
-    });
-    return false;
-});
-</script>
-<!-- Lom Balance 30 min -->	
-<script>
-document.getElementById('calendly-button-lb').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/lom-balance-therapy-30min?hide_event_type_details=1&hide_gdpr_banner=1'
-    });
-    return false;
-});
-</script>	
-<!-- Thai Healing 60 min -->	
-<script>
-document.getElementById('calendly-button-th').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/thai-healing-massage-60min?hide_event_type_details=1&hide_gdpr_banner=1'
-    });
-    return false;
-});
-</script>
-<!-- Hot Stone 60 min -->	
-<script>
-document.getElementById('calendly-button-hs').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/aac-techsol/hot-stone-therapy-60min?hide_event_type_details=1&hide_gdpr_banner=1'
-    });
-    return false;
-});
-</script>	
+
+	
+	
 </body>
-
 </html>
-
-
-
-
-
-
-
-
