@@ -291,7 +291,10 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 
 
 <!-- Tara Flow 60 ini -->	
-<div class="service-card bg-white rounded-xl p-8 shadow-lg">
+<!-- <div class="service-card bg-white rounded-xl p-8 shadow-lg"> -->
+	<div class="bg-primary bg-opacity-5 rounded-xl p-6 border-2 border-primary">
+<div class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block" data-translate="most-popular">Most Popular</div>
+	
 <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
 
 <i class="ri-hand-heart-line text-primary text-2xl"></i>
@@ -302,6 +305,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <span class="text-sm text-gray-500" data-translate="duration">60 minutes</span>
 <span class="text-2xl font-bold text-primary">€49</span>
 </div>
+		<!--
 <button id="koalendar-button-tf6" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
   </button>
@@ -315,6 +319,54 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       return false;
     });
   </script>
+-->
+<!-- Botón Cal.com -->
+  <button 
+    id="cal-button-tf1-2"
+    class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap"
+    data-translate="book-now"
+    data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-60-min"
+    data-cal-namespace="tara-flow-massage-60-min"
+    data-cal-config='{"layout":"month_view"}'>
+    Book Now
+  </button>
+
+
+<!-- Cal.com embed -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "tara-flow-massage-60-min", { origin: "https://app.cal.com" });
+  Cal.ns["tara-flow-massage-60-min"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>		
 </div>
 <!-- Tara Flow 60 end-->
 <!-- Tara Flow 90 ini -->	
@@ -328,6 +380,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <span class="text-sm text-gray-500" data-translate="duration">90 minutes</span>
 <span class="text-2xl font-bold text-primary">€65</span>
 </div>
+	<!--
 <button id="koalendar-button-tf9" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
   </button>
@@ -341,6 +394,54 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       return false;
     });
   </script>
+-->
+	<!-- Botón Cal.com -->
+  <button 
+    id="cal-button-tf1-3"
+    class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap"
+    data-translate="book-now"
+    data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-90-min"
+    data-cal-namespace="tara-flow-massage-90-min"
+    data-cal-config='{"layout":"month_view"}'>
+    Book Now
+  </button>
+
+
+<!-- Cal.com embed -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "tara-flow-massage-90-min", { origin: "https://app.cal.com" });
+  Cal.ns["tara-flow-massage-90-min"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>
 </div>
 <!-- Tara Flow 90 end-->	
 <!-- Lom Balance 30 ini-->	
@@ -354,6 +455,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <span class="text-sm text-gray-500" data-translate="duration">30minutes</span>
 <span class="text-2xl font-bold text-primary">€30</span>
 </div>
+	<!--
 <button id="koalendar-button-lb" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
   </button>
@@ -367,6 +469,54 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       return false;
     });
   </script>
+-->	
+	<!-- Botón Cal.com -->
+  <button 
+    id="cal-button-tf2-1"
+    class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap"
+    data-translate="book-now"
+    data-cal-link="alexander-aldana-ibggfg/lom-balance-therapy-aroma-oil-30min"
+    data-cal-namespace="lom-balance-therapy-aroma-oil-30min"
+    data-cal-config='{"layout":"month_view"}'>
+    Book Now
+  </button>
+
+
+<!-- Cal.com embed -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "lom-balance-therapy-aroma-oil-30min", { origin: "https://app.cal.com" });
+  Cal.ns["lom-balance-therapy-aroma-oil-30min"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>	
 </div>
 <!-- Lom Balance 30 end-->
 <!-- Hot Stone 30 ini-->	
@@ -380,7 +530,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <span class="text-sm text-gray-500" data-translate="duration">60 minutes</span>
 <span class="text-2xl font-bold text-primary">€65</span>
 </div>
-
+<!--
 
 <button id="koalendar-button-hs" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
@@ -395,7 +545,54 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       return false;
     });
   </script>
+-->
+	<!-- Botón Cal.com -->
+  <button 
+    id="cal-button-tf2-1"
+    class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap"
+    data-translate="book-now"
+    data-cal-link="alexander-aldana-ibggfg/hot-stone-therapy"
+    data-cal-namespace="hot-stone-therapy"
+    data-cal-config='{"layout":"month_view"}'>
+    Book Now
+  </button>
 
+
+<!-- Cal.com embed -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "hot-stone-therapy", { origin: "https://app.cal.com" });
+  Cal.ns["hot-stone-therapy"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>		
 </div>
 <!-- Hot Stone 30 end-->
 <!-- Thai Healing 30 ini-->	
@@ -409,7 +606,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <span class="text-sm text-gray-500" data-translate="duration">60 minutes</span>
 <span class="text-2xl font-bold text-primary">€65</span>
 </div>
-
+<!--
 <button id="koalendar-button-th" class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap" data-translate="book-now">
     Book Now
   </button>
@@ -423,7 +620,55 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       return false;
     });
   </script>
+-->
+	<!-- Botón Cal.com -->
+  <button 
+    id="cal-button-tf2-1"
+    class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap"
+    data-translate="book-now"
+    data-cal-link="alexander-aldana-ibggfg/thai-healing-massage"
+    data-cal-namespace="thai-healing-massage"
+    data-cal-config='{"layout":"month_view"}'>
+    Book Now
+  </button>
 
+
+<!-- Cal.com embed -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "thai-healing-massage", { origin: "https://app.cal.com" });
+  Cal.ns["thai-healing-massage"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>	
+	
 </div>
 <!-- Thai Healing 30 end-->
 <!--
@@ -456,7 +701,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 -->
 </div>
 <!-- treatment packages -->	
-	
+<!--	
 <div class="bg-white rounded-xl p-8 shadow-lg">
 <h3 class="text-3xl font-serif font-bold text-center mb-8" data-translate="packages-title">Treatment Packages</h3>
 <div class="grid md:grid-cols-3 gap-8">
@@ -507,6 +752,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 
 </div>
 </section>
+-->
 <!-- OLD BOOKING SECTION -->	
 <!-- OLD BOOKING SECTION END -->
 	
@@ -705,7 +951,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <i class="ri-time-line text-primary"></i>
 </div>
 <div>
-<p class="text-gray-300" data-translate="business-hours">Mon-Sat: 11:00 - 20:00</p>
+<!--<p class="text-gray-300" data-translate="business-hours">Mon-Sat: 11:00 - 20:00</p>-->
 <p class="text-sm text-gray-400" data-translate="by-appointment">By Appointment Only</p>
 </div>
 </div>
@@ -715,7 +961,7 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <div class="border-t border-gray-800 pt-8">
 <div class="flex flex-col md:flex-row justify-between items-center">
 <p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="copyright">© 2025 Lom Tara Wellness. All rights reserved.</p>
-<p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="copyright">Made by AAC</p>
+<p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="copyright2">Made by AAC</p>
 <div class="flex space-x-6">
 <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors" data-translate="privacy-policy">Privacy Policy</a>
 <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors" data-translate="terms-service">Terms of Service</a>
@@ -990,6 +1236,7 @@ en: {
 'business-hours': 'Mon-Sat: 11:00 - 20:00',
 'by-appointment': 'By Appointment Only',
 'copyright': '© 2025 Lom Tara. All rights reserved.',
+'copyright2': 'Made by AAC',	
 'privacy-policy': 'Privacy Policy',
 'terms-service': 'Terms of Service'
 },
@@ -1088,6 +1335,7 @@ nl: {
 'business-hours': 'Ma-Za: 11:00 - 20:00',
 'by-appointment': 'Alleen op Afspraak',
 'copyright': '© 2025 Lom Tara. Alle rechten voorbehouden.',
+'copyright2': 'Made by AAC',	
 'privacy-policy': 'Privacybeleid',
 'terms-service': 'Servicevoorwaarden'
 },
@@ -1186,6 +1434,7 @@ th: {
 'business-hours': 'จันทร์-อาทิตย์: 11:00 - 20:00',
 'by-appointment': 'ตามนัดหมายเท่านั้น',
 'copyright': '© 2025 สยามเซเรนิตี้ สงวนลิขสิทธิ์ทั้งหมด',
+'copyright2': 'Made by AAC',	
 'privacy-policy': 'นโยบายความเป็นส่วนตัว',
 'terms-service': 'เงื่อนไขการบริการ'
 }
