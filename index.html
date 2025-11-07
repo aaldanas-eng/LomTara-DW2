@@ -193,7 +193,7 @@ background: rgba(255,255,255,0.95);
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 <!-- Tara Flow 30 ini-->	
-	
+	<!-- koalendar example
 <div class="service-card bg-white rounded-xl p-8 shadow-lg">
   <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
     <i class="ri-hand-heart-line text-primary text-2xl"></i>
@@ -218,6 +218,72 @@ background: rgba(255,255,255,0.95);
     });
   </script>
 </div>	
+-->
+	<div class="service-card bg-white rounded-xl p-8 shadow-lg">
+  <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+    <i class="ri-hand-heart-line text-primary text-2xl"></i>
+  </div>
+  <h3 class="text-2xl font-serif font-semibold mb-4" data-translate="service1-title">
+    Tara Flow Massage - Natural Oil Massage
+  </h3>
+  <p class="text-gray-600 mb-6" data-translate="service1-desc">
+    Gentle flowing massage with natural oils for complete relaxation and muscle relief
+  </p>
+  <div class="flex justify-between items-center mb-6">
+    <span class="text-sm text-gray-500" data-translate="duration">30 minutes</span>
+    <span class="text-2xl font-bold text-primary">€25</span>
+  </div>
+
+  <!-- Botón Cal.com -->
+  <button 
+    id="cal-button-tf3-2"
+    class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors whitespace-nowrap"
+    data-translate="book-now"
+    data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-30-min"
+    data-cal-namespace="tara-flow-massage-30-min"
+    data-cal-config='{"layout":"month_view"}'>
+    Book Now
+  </button>
+</div>
+
+<!-- Cal.com embed -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "tara-flow-massage-30-min", { origin: "https://app.cal.com" });
+  Cal.ns["tara-flow-massage-30-min"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>
+
+	
+	
 <!-- Tara Flow 30 end-->
 
 
