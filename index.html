@@ -359,13 +359,24 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
     </div>
 
     <!-- Texto derecha -->
-    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-      <h2 class="text-2xl font-semibold mb-4">Tara Neck, Shoulder & Back Focus</h2>
-      <p class="text-gray-700 leading-relaxed">
-        This massage relieves accumulated stress from the upper body especially neck, shoulders, and back.  
-        Combining gentle Thai stretches and deep pressure, it improves flexibility, posture, and deep relaxation.  
-        Ideal for anyone spending long hours sitting or working at a desk.
-      </p>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Tara Neck, Shoulder & Back Focus</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          This massage relieves accumulated stress from the upper body especially neck, shoulders, and back.  
+          Combining gentle Thai stretches and deep pressure, it improves flexibility, posture, and deep relaxation.  
+          Ideal for anyone spending long hours sitting or working at a desk.
+        </p>
+      </div>
+
+      <!-- ✅ Botón de reserva dentro del modal -->
+      <button 
+        class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+        data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-30-min"
+        data-cal-namespace="tara-flow-massage-30-min"
+        data-cal-config='{"layout":"month_view"}'>
+        Book Now
+      </button>
     </div>
   </div>
 </div>
@@ -378,12 +389,21 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       <img src="Images/naturaloil.jpeg"
            alt="Tara Flow Massage" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-      <h2 class="text-2xl font-semibold mb-4">Tara Flow Massage - Natural Oil</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Gentle flowing massage with natural oils for complete relaxation and muscle relief.  
-        Improves blood circulation, reduces tension, and promotes overall wellbeing.
-      </p>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Tara Flow Massage - Natural Oil</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Gentle flowing massage with natural oils for complete relaxation and muscle relief.  
+          Improves blood circulation, reduces tension, and promotes overall wellbeing.
+        </p>
+      </div>
+      <button 
+        class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+        data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-60-min"
+        data-cal-namespace="tara-flow-massage-60-min"
+        data-cal-config='{"layout":"month_view"}'>
+        Book Now
+      </button>
     </div>
   </div>
 </div>
@@ -393,28 +413,33 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
   <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal3')">&times;</button>
     <div class="w-full md:w-1/2 h-64 md:h-auto">
-	<img src="Images/foot massage.jpg"
-    	 alt="Thai Foot Massage"
-     	class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
-
+      <img src="Images/foot massage.jpg"
+           alt="Thai Foot Massage"
+           class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-      <h2 class="text-2xl font-semibold mb-4">Relax & Rebalance – Chakra Healing</h2>
-
-      <h3 class="text-xl font-semibold mb-2">Full-Body Relaxation Massage</h3>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Enjoy gentle, flowing techniques that relax the entire body back, shoulders, legs, arms, and neck helping release muscle tension and improve circulation.
-      </p>
-
-      <h3 class="text-xl font-semibold mb-2">Chakra Opening & Energy Balancing</h3>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Light touch and mindful breathing are used to open and balance your seven chakras, promoting clarity, emotional harmony, and deep inner calm.
-      </p>
-
-      <h3 class="text-xl font-semibold mb-2">Foot Massage Closing</h3>
-      <p class="text-gray-700 leading-relaxed">
-        The session ends with a soothing foot massage to ground your energy and leave you feeling refreshed, balanced, and completely relaxed.
-      </p>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Relax & Rebalance – Chakra Healing</h2>
+        <h3 class="text-xl font-semibold mb-2">Full-Body Relaxation Massage</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Enjoy gentle, flowing techniques that relax the entire body back, shoulders, legs, arms, and neck helping release muscle tension and improve circulation.
+        </p>
+        <h3 class="text-xl font-semibold mb-2">Chakra Opening & Energy Balancing</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Light touch and mindful breathing are used to open and balance your seven chakras, promoting clarity, emotional harmony, and deep inner calm.
+        </p>
+        <h3 class="text-xl font-semibold mb-2">Foot Massage Closing</h3>
+        <p class="text-gray-700 leading-relaxed">
+          The session ends with a soothing foot massage to ground your energy and leave you feeling refreshed, balanced, and completely relaxed.
+        </p>
+      </div>
+      <button 
+        class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+        data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-90-min"
+        data-cal-namespace="tara-flow-massage-90-min"
+        data-cal-config='{"layout":"month_view"}'>
+        Book Now
+      </button>
     </div>
   </div>
 </div>
@@ -427,12 +452,21 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       <img src="Images/oils.jpeg"
            alt="Lom Balance" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-      <h2 class="text-2xl font-semibold mb-4">Lom Balance Therapy - Aroma Oil</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Balancing aromatherapy treatment with premium essential oils for emotional and physical harmony.  
-        Promotes relaxation, improves mood, and restores energetic balance.
-      </p>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Lom Balance Therapy - Aroma Oil</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Balancing aromatherapy treatment with premium essential oils for emotional and physical harmony.  
+          Promotes relaxation, improves mood, and restores energetic balance.
+        </p>
+      </div>
+      <button 
+        class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+        data-cal-link="alexander-aldana-ibggfg/lom-balance-therapy-aroma-oil-30min"
+        data-cal-namespace="lom-balance-therapy-aroma-oil-30min"
+        data-cal-config='{"layout":"month_view"}'>
+        Book Now
+      </button>
     </div>
   </div>
 </div>
@@ -445,12 +479,21 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       <img src="Images/hot_stone.png"
            alt="Hot Stone Therapy" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-      <h2 class="text-2xl font-semibold mb-4">Hot Stone Therapy</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Heated volcanic stones placed on key points to release tension.  
-        Promotes deep muscle relaxation, circulation, and stress relief.
-      </p>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Hot Stone Therapy</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Heated volcanic stones placed on key points to release tension.  
+          Promotes deep muscle relaxation, circulation, and stress relief.
+        </p>
+      </div>
+      <button 
+        class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+        data-cal-link="alexander-aldana-ibggfg/hot-stone-therapy"
+        data-cal-namespace="hot-stone-therapy"
+        data-cal-config='{"layout":"month_view"}'>
+        Book Now
+      </button>
     </div>
   </div>
 </div>
@@ -463,15 +506,25 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
       <img src="Images/thai healing.jpg"
            alt="Thai Healing" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-      <h2 class="text-2xl font-semibold mb-4">Thai Healing Massage</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Traditional Thai massage combining acupressure, stretching, and energy work.  
-        Improves flexibility, energy flow, and overall wellness.
-      </p>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Thai Healing Massage</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Traditional Thai massage combining acupressure, stretching, and energy work.  
+          Improves flexibility, energy flow, and overall wellness.
+        </p>
+      </div>
+      <button 
+        class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+        data-cal-link="alexander-aldana-ibggfg/thai-healing-massage"
+        data-cal-namespace="thai-healing-massage"
+        data-cal-config='{"layout":"month_view"}'>
+        Book Now
+      </button>
     </div>
   </div>
 </div>
+
 <!-- ===================== SCRIPT PARA MODALES CENTRADOS ===================== -->
 <script>
 function openServiceModal(id){
@@ -683,10 +736,10 @@ document.addEventListener('keydown',e=>{
 <div>
 <h4 class="text-lg font-semibold mb-6" data-translate="services">Services</h4>
 <ul class="space-y-3">
-<li><span class="text-gray-300" data-translate="service1-title">Tara Flow Massage</span></li>
-<li><span class="text-gray-300" data-translate="service2-title">Lom Balance Therapy</span></li>
-<li><span class="text-gray-300" data-translate="service3-title">Hot Stone Therapy</span></li>
-<li><span class="text-gray-300" data-translate="service4-title">Thai Healing Massage</span></li>
+<li><a href="#services" class="text-gray-300" data-translate="service1-title">Tara Flow Massage</span></li>
+<li><a href="#services"  class="text-gray-300" data-translate="service2-title">Lom Balance Therapy</span></li>
+<li><a href="#services" data-translate="service3-title">Hot Stone Therapy</span></li>
+<li><a href="#services" data-translate="service4-title">Thai Healing Massage</span></li>
 </ul>
 </div>
 <div>
