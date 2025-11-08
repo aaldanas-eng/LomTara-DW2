@@ -343,21 +343,23 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
   </div>
 </div>
 
-<!-- ===================== MODALES CENTRADOS CORRECTOS ===================== -->
+<!-- ===================== MODALES CENTRADOS Y RESPONSIVE ===================== -->
 
 <!-- Modal 1 -->
-<div id="serviceModal1" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center">
-  <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full md:flex relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+<div id="serviceModal1" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <!-- Botón cerrar -->
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal1')">&times;</button>
+    
     <!-- Imagen izquierda -->
-    <div class="md:w-1/2 w-full">
+    <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
            alt="Tara Neck Massage"
-           class="object-cover w-full h-full rounded-l-xl">
+           class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
+
     <!-- Texto derecha -->
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
       <h2 class="text-2xl font-semibold mb-4">Tara Neck, Shoulder & Back Focus</h2>
       <p class="text-gray-700 leading-relaxed">
         This massage relieves accumulated stress from the upper body — especially neck, shoulders, and back.  
@@ -369,14 +371,14 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 </div>
 
 <!-- Modal 2 -->
-<div id="serviceModal2" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center">
-  <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full md:flex relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+<div id="serviceModal2" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal2')">&times;</button>
-    <div class="md:w-1/2 w-full">
+    <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
-           alt="Tara Flow Massage" class="object-cover w-full h-full rounded-l-xl">
+           alt="Tara Flow Massage" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
       <h2 class="text-2xl font-semibold mb-4">Tara Flow Massage - Natural Oil</h2>
       <p class="text-gray-700 leading-relaxed">
         Gentle flowing massage with natural oils for complete relaxation and muscle relief.  
@@ -387,44 +389,43 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 </div>
 
 <!-- Modal 3 -->
-<div id="serviceModal3" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center">
-  <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full md:flex relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+<div id="serviceModal3" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal3')">&times;</button>
-    <div class="md:w-1/2 w-full">
+    <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
-           alt="Relax & Rebalance" class="object-cover w-full h-full rounded-l-xl">
+           alt="Relax & Rebalance" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
-  <h2 class="text-2xl font-semibold mb-4">Relax & Rebalance – Chakra Healing</h2>
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
+      <h2 class="text-2xl font-semibold mb-4">Relax & Rebalance – Chakra Healing</h2>
 
-  <h3 class="text-xl font-semibold mb-2">Full-Body Relaxation Massage</h3>
-  <p class="text-gray-700 leading-relaxed mb-4">
-    Enjoy gentle, flowing techniques that relax the entire body back, shoulders, legs, arms, and neck helping release muscle tension and improve circulation.
-  </p>
+      <h3 class="text-xl font-semibold mb-2">Full-Body Relaxation Massage</h3>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Enjoy gentle, flowing techniques that relax the entire body — back, shoulders, legs, arms, and neck helping release muscle tension and improve circulation.
+      </p>
 
-  <h3 class="text-xl font-semibold mb-2">Chakra Opening & Energy Balancing</h3>
-  <p class="text-gray-700 leading-relaxed mb-4">
-    Light touch and mindful breathing are used to open and balance your seven chakras, promoting clarity, emotional harmony, and deep inner calm.
-  </p>
+      <h3 class="text-xl font-semibold mb-2">Chakra Opening & Energy Balancing</h3>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Light touch and mindful breathing are used to open and balance your seven chakras, promoting clarity, emotional harmony, and deep inner calm.
+      </p>
 
-  <h3 class="text-xl font-semibold mb-2">Foot Massage Closing</h3>
-  <p class="text-gray-700 leading-relaxed">
-    The session ends with a soothing foot massage to ground your energy and leave you feeling refreshed, balanced, and completely relaxed.
-  </p>
-</div>
-
+      <h3 class="text-xl font-semibold mb-2">Foot Massage Closing</h3>
+      <p class="text-gray-700 leading-relaxed">
+        The session ends with a soothing foot massage to ground your energy and leave you feeling refreshed, balanced, and completely relaxed.
+      </p>
+    </div>
   </div>
 </div>
 
 <!-- Modal 4 -->
-<div id="serviceModal4" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center">
-  <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full md:flex relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+<div id="serviceModal4" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal4')">&times;</button>
-    <div class="md:w-1/2 w-full">
+    <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
-           alt="Lom Balance" class="object-cover w-full h-full rounded-l-xl">
+           alt="Lom Balance" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
       <h2 class="text-2xl font-semibold mb-4">Lom Balance Therapy - Aroma Oil</h2>
       <p class="text-gray-700 leading-relaxed">
         Balancing aromatherapy treatment with premium essential oils for emotional and physical harmony.  
@@ -435,14 +436,14 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 </div>
 
 <!-- Modal 5 -->
-<div id="serviceModal5" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center">
-  <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full md:flex relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+<div id="serviceModal5" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal5')">&times;</button>
-    <div class="md:w-1/2 w-full">
+    <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
-           alt="Hot Stone Therapy" class="object-cover w-full h-full rounded-l-xl">
+           alt="Hot Stone Therapy" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
       <h2 class="text-2xl font-semibold mb-4">Hot Stone Therapy</h2>
       <p class="text-gray-700 leading-relaxed">
         Heated volcanic stones placed on key points to release tension.  
@@ -453,14 +454,14 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 </div>
 
 <!-- Modal 6 -->
-<div id="serviceModal6" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center">
-  <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full md:flex relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+<div id="serviceModal6" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal6')">&times;</button>
-    <div class="md:w-1/2 w-full">
+    <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
-           alt="Thai Healing" class="object-cover w-full h-full rounded-l-xl">
+           alt="Thai Healing" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
+    <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
       <h2 class="text-2xl font-semibold mb-4">Thai Healing Massage</h2>
       <p class="text-gray-700 leading-relaxed">
         Traditional Thai massage combining acupressure, stretching, and energy work.  
@@ -469,7 +470,6 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
     </div>
   </div>
 </div>
-
 <!-- ===================== SCRIPT PARA MODALES CENTRADOS ===================== -->
 <script>
 function openServiceModal(id){
