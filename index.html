@@ -422,24 +422,48 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <!-- Modal 2 -->
 <div id="serviceModal2" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
   <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+    
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal2')">&times;</button>
+    
+    <!-- Imagen -->
     <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="Images/naturaloil.jpeg" alt="Tara Flow Massage" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
+
+    <!-- Contenido -->
     <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
       <div>
-        <h2 class="text-2xl font-semibold mb-4" data-translate="modal2_title"></h2>
-        <p class="text-gray-700 leading-relaxed mb-6" data-translate="modal2_text"></p>
+        <h2 class="text-2xl font-semibold mb-4" data-translate="modal2_title">Tara Flow Massage – Natural Oil</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-4" data-translate="modal2_paragraph1">
+          Immerse yourself in a deeply soothing experience that harmonizes body and mind. The Tara Flow Massage combines gentle, rhythmic movements with warm natural oils to release tension, calm the nervous system, and restore inner balance.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mb-4" data-translate="modal2_paragraph2">
+          This holistic treatment enhances circulation, hydrates the skin, and promotes a profound sense of relaxation and well being. Ideal for stress relief, muscle recovery, and total renewal.
+        </p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2" data-translate="modal2_benefits_title">Benefits:</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li data-translate="modal2_benefit1">Relieves muscle tension and stiffness</li>
+          <li data-translate="modal2_benefit2">Improves circulation and detoxification</li>
+          <li data-translate="modal2_benefit3">Deeply hydrates and nourishes the skin</li>
+          <li data-translate="modal2_benefit4">Reduces stress and anxiety</li>
+          <li data-translate="modal2_benefit5">Restores energy flow and inner harmony</li>
+        </ul>
       </div>
+
       <button class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
         data-translate="book_now"
         data-cal-link="alexander-aldana-ibggfg/tara-flow-massage-60-min"
         data-cal-namespace="tara-flow-massage-60-min"
         data-cal-config='{"layout":"month_view"}'>
+        Book Now
       </button>
     </div>
   </div>
 </div>
+
 
 <!-- Modal 3 -->
 <div id="serviceModal3" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
@@ -1013,8 +1037,17 @@ en: {
 'book_now': 'Book Now',	
 'modal1_title': 'Tara Neck, Shoulder & Back Focus', 
 'modal1_text': 'This focused treatment releases built-up tension in the neck, shoulders and upper back. Combining gentle Thai stretching with targeted pressure improves posture, increases flexibility and brings deep relaxation ideal after long hours of sitting.', 
-'modal2_title': 'Tara Flow Massage - Natural Oil', 
-'modal2_text': 'A gentle flowing oil massage designed to soothe muscles, improve circulation and restore balance. Natural oils enhance relaxation and nourish the skin.', 
+
+'modal2_title': 'Tara Flow Massage – Natural Oil',
+'modal2_paragraph1': 'Immerse yourself in a deeply soothing experience that harmonizes body and mind. The Tara Flow Massage combines gentle, rhythmic movements with warm natural oils to release tension, calm the nervous system, and restore inner balance.',
+'modal2_paragraph2': 'This holistic treatment enhances circulation, hydrates the skin, and promotes a profound sense of relaxation and well-being. Ideal for stress relief, muscle recovery, and total renewal.',
+'modal2_benefits_title': 'Benefits:',
+'modal2_benefit1': 'Relieves muscle tension and stiffness',
+'modal2_benefit2': 'Improves circulation and detoxification',
+'modal2_benefit3': 'Deeply hydrates and nourishes the skin',
+'modal2_benefit4': 'Reduces stress and anxiety',
+'modal2_benefit5': 'Restores energy flow and inner harmony',
+  
 'modal3_title': 'Relax & Rebalance – Chakra Healing', 
 'modal3_text1_title': 'Full-Body Relaxation Massage', 
 'modal3_text1': 'Gentle, rhythmic techniques help release tension across the whole body and support healthy circulation.', 
@@ -1131,8 +1164,17 @@ nl: {
 'book_now': 'Nu Boeken',		
 'modal1_title': 'Tara Nek, Schouder & Rugfocus',
 'modal1_text': 'Deze gerichte behandeling verlicht opgebouwde spanning in de nek, schouders en bovenrug. Een combinatie van zachte Thaise strekkingen en gerichte druk verbetert de houding, verhoogt de flexibiliteit en brengt diepe ontspanning ideaal na lange uren zitten.',
-'modal2_title': 'Tara Flow Massage - Natuurlijke Olie',
-'modal2_text': 'Een zachte, vloeiende oliemassage die de spieren kalmeert, de bloedsomloop verbetert en het evenwicht in het lichaam herstelt. Natuurlijke oliën versterken de ontspanning en voeden de huid.',
+
+'modal2_title': 'Tara Flow Massage – Natuurlijke Olie',
+'modal2_paragraph1': 'Laat jezelf onderdompelen in een diep ontspannende ervaring die lichaam en geest in harmonie brengt. De Tara Flow Massage combineert zachte, ritmische bewegingen met warme natuurlijke oliën om spanning los te laten, het zenuwstelsel te kalmeren en innerlijke balans te herstellen.',
+'modal2_paragraph2': 'Deze holistische behandeling verbetert de bloedsomloop, hydrateert de huid en bevordert een diep gevoel van ontspanning en welzijn. Ideaal voor stressverlichting, spierherstel en totale vernieuwing.',
+'modal2_benefits_title': 'Voordelen:',
+'modal2_benefit1': 'Verlicht spierspanning en stijfheid',
+'modal2_benefit2': 'Verbetert de bloedsomloop en ontgifting',
+'modal2_benefit3': 'Hydrateert en voedt de huid intensief',
+'modal2_benefit4': 'Vermindert stress en angst',
+'modal2_benefit5': 'Herstelt de energiestroom en innerlijke harmonie',	
+	
 'modal3_title': 'Ontspan & Herstel – Chakra Healing',
 'modal3_text1_title': 'Volledige Lichaamsontspanningsmassage',
 'modal3_text1': 'Zachte, ritmische technieken helpen spanning in het hele lichaam los te laten en ondersteunen een gezonde doorbloeding.',
@@ -1248,8 +1290,18 @@ th: {
 'book_now': 'จองเลย',
 'modal1_title': 'ทารา เน้นคอ ไหล่ และหลัง',
 'modal1_text': 'การบำบัดเฉพาะจุดนี้ช่วยคลายความตึงเครียดที่สะสมบริเวณคอ ไหล่ และหลังส่วนบน ผสมผสานการยืดแบบไทยที่นุ่มนวลกับการกดจุดอย่างแม่นยำ เพื่อปรับท่าทาง เพิ่มความยืดหยุ่น และมอบความผ่อนคลายล้ำลึก เหมาะอย่างยิ่งหลังจากนั่งทำงานเป็นเวลานาน',
+
 'modal2_title': 'ทารา โฟลว์ มาสสาจ – น้ำมันธรรมชาติ',
-'modal2_text': 'การนวดด้วยน้ำมันอย่างอ่อนโยนที่ออกแบบมาเพื่อผ่อนคลายกล้ามเนื้อ กระตุ้นการไหลเวียนของเลือด และฟื้นคืนสมดุลให้ร่างกาย น้ำมันธรรมชาติช่วยเพิ่มความผ่อนคลายและบำรุงผิวให้นุ่มชุ่มชื้น',
+'modal2_paragraph1': 'สัมผัสประสบการณ์ผ่อนคลายอย่างล้ำลึกที่ช่วยปรับสมดุลระหว่างร่างกายและจิตใจ ‘ทารา โฟลว์ มาสสาจ’ ผสมผสานการนวดที่อ่อนโยนและเป็นจังหวะเข้ากับน้ำมันธรรมชาติอุ่น ๆ เพื่อคลายความตึง เคลื่อนพลังงานให้ไหลเวียน และคืนความสมดุลให้ภายใน.',
+'modal2_paragraph2': 'ทรีตเมนต์แบบองค์รวมนี้ช่วยกระตุ้นการไหลเวียนของโลหิต เติมความชุ่มชื้นให้ผิว และมอบความรู้สึกผ่อนคลายและสงบอย่างล้ำลึก เหมาะสำหรับการคลายความเครียด ฟื้นฟูกล้ามเนื้อ และเติมพลังใหม่ทั้งร่างกายและจิตใจ.',
+'modal2_benefits_title': 'ประโยชน์:',
+'modal2_benefit1': 'บรรเทาความตึงและความแข็งของกล้ามเนื้อ',
+'modal2_benefit2': 'ช่วยกระตุ้นการไหลเวียนโลหิตและการขับของเสีย',
+'modal2_benefit3': 'ให้ความชุ่มชื้นและบำรุงผิวอย่างล้ำลึก',
+'modal2_benefit4': 'ลดความเครียดและความวิตกกังวล',
+'modal2_benefit5': 'ฟื้นฟูการไหลเวียนของพลังงานและความสมดุลภายใน',	
+	
+	
 'modal3_title': 'ผ่อนคลายและปรับสมดุล – การบำบัดจักระ',
 'modal3_text1_title': 'นวดผ่อนคลายทั่วร่างกาย',
 'modal3_text1': 'เทคนิคนวดที่อ่อนโยนและมีจังหวะ ช่วยคลายความตึงของกล้ามเนื้อทั่วร่างกายและส่งเสริมการไหลเวียนของเลือด',
