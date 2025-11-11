@@ -517,20 +517,41 @@ A sanctuary inspired by the wind and the forest, where healing flows gently thro
 <!-- Modal 5 -->
 <div id="serviceModal5" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999] flex items-center justify-center px-4">
   <div class="bg-white rounded-xl shadow-xl w-full max-w-4xl flex flex-col md:flex-row relative transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-hidden">
+    
     <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeServiceModal('serviceModal5')">&times;</button>
+    
+    <!-- Imagen -->
     <div class="w-full md:w-1/2 h-64 md:h-auto">
       <img src="Images/hot_stone.png" alt="Hot Stone Therapy" class="object-cover w-full h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
     </div>
+
+    <!-- Contenido -->
     <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto max-h-[90vh] flex flex-col justify-between">
       <div>
-        <h2 class="text-2xl font-semibold mb-4" data-translate="modal5_title"></h2>
-        <p class="text-gray-700 leading-relaxed mb-6" data-translate="modal5_text"></p>
+        <h2 class="text-2xl font-semibold mb-4" data-translate="modal5_title">Hot Stone Therapy</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-4" data-translate="modal5_paragraph1">
+          Experience the ultimate relaxation with Hot Stone Therapy, a soothing massage that uses smooth, heated stones to release tension, improve circulation, and restore balance to both body and mind. The gentle warmth of the stones penetrates deeply into muscles, melting away stiffness and promoting a profound sense of calm.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mb-4" data-translate="modal5_paragraph2">
+	  This therapy combines traditional massage techniques with the healing properties of heat, creating a deeply restorative experience that leaves you feeling rejuvenated and refreshed.        </p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2" data-translate="modal5_benefits_title">Benefits:</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li data-translate="modal5_benefit1">Relieves muscle tension and stiffness</li>
+          <li data-translate="modal5_benefit2">Enhances blood circulation and promotes detoxification</li>
+          <li data-translate="modal5_benefit3">Reduces stress and anxiety while calming the nervous system</li>
+          <li data-translate="modal5_benefit4">Promotes better sleep and mental clarity</li>
+          <li data-translate="modal5_benefit5">Improves overall energy flow and balance</li>
+        </ul>
       </div>
-      <button class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
-        data-translate="book_now"
-        data-cal-link="alexander-aldana-ibggfg/hot-stone-therapy"
-        data-cal-namespace="hot-stone-therapy"
-        data-cal-config='{"layout":"month_view"}'>
+
+	<button class="w-full bg-primary hover:bg-yellow-600 text-white py-3 rounded-button font-semibold transition-colors mt-4"
+          data-translate="book_now"
+          data-cal-link="alexander-aldana-ibggfg/hot-stone-therapy"
+          data-cal-namespace="hot-stone-therapy"
+          data-cal-config='{"layout":"month_view"}'>
       </button>
     </div>
   </div>
@@ -1057,8 +1078,17 @@ en: {
 'modal3_text3': 'The session finishes with a soothing foot massage to ground your energy and leave you feeling renewed.', 
 'modal4_title': 'Lom Balance Therapy - Aroma Oil', 
 'modal4_text': 'An aromatic treatment using premium essential oils chosen to restore emotional balance, ease tension and promote restful calm.', 
-'modal5_title': 'Hot Stone Therapy', 
-'modal5_text': 'Warm volcanic stones are placed on strategic points to ease deep muscle tension, improve circulation and promote profound relaxation.', 
+
+'modal5_title': 'Hot Stone Therapy',
+'modal5_paragraph1': 'Experience the ultimate relaxation with Hot Stone Therapy, a soothing massage that uses smooth, heated stones to release tension, improve circulation, and restore balance to both body and mind. The gentle warmth of the stones penetrates deeply into muscles, melting away stiffness and promoting a profound sense of calm.',
+'modal5_paragraph2': 'This therapy combines traditional massage techniques with the healing properties of heat, creating a deeply restorative experience that leaves you feeling rejuvenated and refreshed.',
+'modal5_benefits_title': 'Benefits:',
+'modal5_benefit1': 'Relieves muscle tension and stiffness',
+'modal5_benefit2': 'Enhances blood circulation and promotes detoxification',
+'modal5_benefit3': 'Reduces stress and anxiety while calming the nervous system',
+'modal5_benefit4': 'Promotes better sleep and mental clarity',
+'modal5_benefit5': 'Improves overall energy flow and balance',	
+	
 'modal6_title': 'Thai Healing Massage', 
 'modal6_text': 'A traditional Thai approach combining acupressure, stretching and energy work to improve flexibility and overall wellbeing.',
 'packages-title': 'Treatment Packages',
@@ -1184,8 +1214,18 @@ nl: {
 'modal3_text3': 'De sessie eindigt met een rustgevende voetmassage om je energie te gronden en een gevoel van vernieuwing achter te laten.',
 'modal4_title': 'Lom Balans Therapie - Aroma Olie',
 'modal4_text': 'Een aromatische behandeling met hoogwaardige essentiële oliën die zijn geselecteerd om emotioneel evenwicht te herstellen, spanning te verlichten en diepe rust te bevorderen.',
-'modal5_title': 'Hete Steen Therapie',
-'modal5_text': 'Warme vulkanische stenen worden op strategische punten geplaatst om diepe spierspanning los te maken, de bloedsomloop te verbeteren en diepe ontspanning te bevorderen.',
+
+'modal5_title': 'Hot Stone Therapie',
+'modal5_paragraph1': 'Ervaar de ultieme ontspanning met Hot Stone Therapie, een rustgevende massage die gebruik maakt van gladde, verwarmde stenen om spanning los te laten, de bloedsomloop te verbeteren en balans te herstellen in zowel lichaam als geest. De zachte warmte van de stenen dringt diep door in de spieren, waardoor stijfheid verdwijnt en een diep gevoel van kalmte ontstaat.',
+'modal5_paragraph2': 'Deze therapie combineert traditionele massagetechnieken met de helende eigenschappen van warmte, wat zorgt voor een diep herstellende ervaring die je verjongd en verfrist achterlaat.',
+'modal5_benefits_title': 'Voordelen:',
+'modal5_benefit1': 'Verlicht spierspanning en stijfheid',
+'modal5_benefit2': 'Verbetert de bloedsomloop en bevordert ontgifting',
+'modal5_benefit3': 'Vermindert stress en angst en kalmeert het zenuwstelsel',
+'modal5_benefit4': 'Bevordert betere slaap en mentale helderheid',
+'modal5_benefit5': 'Verbetert de algehele energiestroom en balans',
+	
+	
 'modal6_title': 'Thaise Genezende Massage',
 'modal6_text': 'Een traditionele Thaise benadering die acupressuur, stretchtechnieken en energiewerk combineert om flexibiliteit en algeheel welzijn te verbeteren.',
 'packages-title': 'Behandelingspakketten',
@@ -1311,8 +1351,18 @@ th: {
 'modal3_text3': 'จบการบำบัดด้วยการนวดเท้าอย่างผ่อนคลาย เพื่อเชื่อมโยงพลังงานกลับสู่สมดุลและให้ความรู้สึกสดชื่นอีกครั้ง',
 'modal4_title': 'ลม บาลานซ์ เธอราปี - น้ำมันอโรม่า',
 'modal4_text': 'การบำบัดด้วยกลิ่นหอมโดยใช้น้ำมันหอมระเหยคุณภาพสูงที่คัดสรรมาเพื่อฟื้นฟูสมดุลทางอารมณ์ บรรเทาความตึงเครียด และสร้างความสงบผ่อนคลาย',
-'modal5_title': 'นวดหินร้อน',
-'modal5_text': 'ใช้หินภูเขาไฟอุ่นวางบนจุดสำคัญของร่างกาย เพื่อช่วยคลายความตึงของกล้ามเนื้อ กระตุ้นการไหลเวียนของเลือด และมอบความผ่อนคลายลึกถึงระดับกล้ามเนื้อ',
+
+'modal5_title': 'ฮอตสโตน เทอราปี',
+'modal5_paragraph1': 'สัมผัสประสบการณ์ผ่อนคลายอย่างสูงสุดด้วยฮอตสโตน เทอราปี การนวดที่ใช้หินราบร้อนลื่นเพื่อคลายความตึง ปรับการไหลเวียนของเลือด และฟื้นฟูความสมดุลทั้งร่างกายและจิตใจ ความอบอุ่นของหินซึมลึกเข้าสู่กล้ามเนื้อ คลายความแข็งและมอบความสงบอย่างล้ำลึก',
+'modal5_paragraph2': 'ทรีตเมนต์นี้ผสมผสานเทคนิคการนวดแบบดั้งเดิมกับคุณสมบัติการรักษาของความร้อน มอบประสบการณ์ฟื้นฟูลึกที่ทำให้คุณรู้สึกสดชื่นและมีพลังใหม่',
+'modal5_benefits_title': 'ประโยชน์:',
+'modal5_benefit1': 'บรรเทาความตึงและความแข็งของกล้ามเนื้อ',
+'modal5_benefit2': 'ช่วยเพิ่มการไหลเวียนของเลือดและการขับของเสีย',
+'modal5_benefit3': 'ลดความเครียดและความวิตกกังวล พร้อมช่วยทำให้ระบบประสาทสงบ',
+'modal5_benefit4': 'ช่วยให้นอนหลับดีขึ้นและจิตใจปลอดโปร่ง',
+'modal5_benefit5': 'ปรับปรุงการไหลเวียนพลังงานและสมดุลโดยรวม',
+	
+	
 'modal6_title': 'นวดบำบัดแบบไทย',
 'modal6_text': 'ศาสตร์การนวดแผนไทยที่ผสมผสานการกดจุด การยืดกล้ามเนื้อ และการปรับสมดุลพลังงาน เพื่อเพิ่มความยืดหยุ่นและส่งเสริมสุขภาวะโดยรวม',
 'packages-title': 'แพ็คเกจการรักษา',
